@@ -1,0 +1,56 @@
+body, html{margin: 0; padding: 0; font-family: Arial;}
+
+.contentSlider{
+	width: 400px;
+	height: 210px;
+	overflow: hidden;
+	position: relative;
+}
+
+.sliderFlow{
+	background-color: orange;
+	padding: 0;
+	height: 100%;
+	margin:0;
+	width: auto;
+	position: relative;
+}
+
+.sliderFlow > li{
+	background-color: green;
+	list-style: none;
+	float: left;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.sliderFlow > li + li{background-color: gray;}
+.sliderFlow > li + li + li{background-color: peru;}
+.sliderFlow > li + li + li + li{background-color: plum;}
+
+.buttons{
+	display: block;
+	width: 120px;
+	height:40px;
+	border-radius: 10px;
+	background: #6495ED;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+	border:4px #00008B;
+	float: left;
+	margin-right: 10px;
+	margin-top: 24px;
+}
+
+.toBack{
+	display: none;
+	background-color: white;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	z-index: 100;
+}

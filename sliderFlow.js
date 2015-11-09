@@ -20,10 +20,13 @@ $(document).ready(function(){
         });
 
         $toBack.on('click', function(){
-            if ($pos == 1) {
+
+        	console.log('Posicion despues de back --' + $pos);
+
+            if (parseInt($(this).closest('.contentSlider').attr('pos')) == 1) {
                 $(this).css('display','none');
             };
-                
+
             $(this).parent().find('.sliderFlow').animate({left: parseInt($(this).parent().find('.sliderFlow').css('left'))+($widthView )+ 'px'}, 240, function(){
                 $(this).parent().find('.sliderFlow').find('li:last-child').remove();
                 $(this).parent().find('.sliderFlow').css('width', ($widthView * getSize()) + 'px');
